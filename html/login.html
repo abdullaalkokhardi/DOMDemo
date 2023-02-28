@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <title>FAB Login</title>
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="../assets/img/fab.png" width="100" height="100" />
+      <h1>First Abu Dhabi Bank</h1>
+      </div>
+    <div class="container">
+      <div class="image-container"></div>
+      <div class="form-container">
+        <br>
+        <br>
+        <br>
+        <h1>Login</h1>
+        <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+          <label>Username*</label><label class="validation-error hide" id="usernameValidationError">This field is required.</label>
+              <label class="validation-error hide" id="usernameWrong">Username is invalid</label>
+          <input type="text" id="username" />
+            <label>Password*</label ><label class="validation-error hide" id="passwordValidationError">This field is required.</label>
+            <label class="validation-error hide" id="passwordWrong">Password is invalid</label>
+          <input type="password" id="password" />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+    <script src="../js/login.js"></script>
+  </body>
+  <footer class="footer">
+    &copy; www.bankfab.com
+  </footer>
+</html>
